@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veado-catingueiro</title>
+
+<!-- FONTES -->  
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Russo+One&display=swap" rel="stylesheet">
+
+<style>
+
+/* ================== RESET ================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-dark-forest: #052e16;
+    --color-forest: #1b5e20;
+    --color-lime: #7cb342;
+    --color-light-green: #dcedc8;
+    --color-lighter-green: #f1f8e9;
+    --color-subtle-text: #558b2f;
+
+    --cerrado-1: #f3e7c0; 
+    --cerrado-2: #d9b44a; 
+    --cerrado-3: #5e7d3a; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-light-green);
+    color: var(--color-dark-forest);
+    line-height: 1.7;
+    padding-top: 90px;
+}
+
+/* ================== NAVBAR ================== */
+.navbar {
+    width: 100%;
+    padding: 1rem 3rem;
+    background: rgba(5, 46, 22, 0.95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(4px);
+}
+
+.navbar-container {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    height: 45px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--color-light-green);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: var(--color-lime);
+}
+
+/* ================== CONTEÚDO ================== */
+.page-container {
+    max-width: 1000px;
+    margin: auto;
+    background: var(--color-lighter-green);
+    padding: 3rem;
+    border-radius: 22px;
+    box-shadow: 0 10px 30px rgba(5,46,22,0.12);
+    border-left: 6px solid var(--color-lime);
+}
+
+/* LOGO / IMAGEM */
+.animal-logo {
+    width: 260px;
+    margin: 0 auto 1.8rem;
+    display: block;
+    border-radius: 18px;
+    object-fit: cover;
+    filter: drop-shadow(0 3px 8px rgba(0,0,0,0.25));
+}
+
+/* TÍTULOS */
+.page-title {
+    text-align: center;
+    font-family: 'Russo One';
+    font-size: 2.7rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-dark-forest);
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--color-subtle-text);
+    margin-bottom: 2.5rem;
+}
+
+.section-title {
+    font-family: 'Russo One';
+    font-size: 1.9rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-forest);
+    border-left: 6px solid var(--color-lime);
+    padding-left: 10px;
+}
+
+/* TEXTO */
+.page-container p {
+    margin-bottom: 1.4rem;
+    font-size: 1.05rem;
+    text-align: justify;
+    color: #2f3d29;
+}
+
+/* LISTA */
+.page-container ul {
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+}
+
+.page-container ul li {
+    margin-bottom: 0.6rem;
+    font-size: 1.05rem;
+    color: #2e4820;
+}
+
+/* ================== BOTÃO VOLTAR ================== */
+.btn-voltar {
+    display: inline-block;
+    margin-top: 2.5rem;
+    padding: 0.9rem 2.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #2d1f0b;
+    border-radius: 28px;
+
+    background: #caa43a;
+    border: 2px solid #5c3e12;
+    box-shadow: 0 6px 18px rgba(70,50,10,0.25);
+    transition: 0.3s;
+}
+
+.btn-voltar:hover {
+    transform: translateY(-3px);
+}
+
+/* ================== FOOTER ================== */
+footer {
+    margin-top: 3rem;
+    background: var(--color-dark-forest);
+    color: #a5d6a7;
+    text-align: center;
+    padding: 2rem;
+    border-top: 5px solid var(--color-lime);
+}
+
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .page-container { padding: 1.7rem; }
+    .animal-logo { width: 170px; }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="navbar-container">
+        <img src="zoologando.png" class="logo-img" alt="Logo">
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="index.html">Animais</a></li>
+            <li><a href="index.html">Conteúdo</a></li>
+            <li><a href="index.html">Contato</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ==================== CONTEÚDO ==================== -->
+<div class="page-container">
+
+    <img src="Veado catingueiro.JPG" alt="Veado-catingueiro" class="animal-logo">
+
+    <h1 class="page-title">Veado-catingueiro</h1>
+    <div class="subtitle"><em>Mazama gouazoubira</em></div>
+
+    <p>
+        O veado-catingueiro é um dos cervídeos mais comuns do Brasil, ocorrendo amplamente no Cerrado, 
+        Caatinga, Pantanal, bordas da Mata Atlântica e até mesmo em ambientes modificados, como áreas rurais. 
+        Pertence ao gênero <strong>Mazama</strong>, dentro da família Cervidae, que inclui os veados e cervos das Américas.
+    </p>
+
+    <p>
+        É conhecido pelo porte pequeno, comportamento discreto e grande capacidade de adaptação. 
+        Alimenta-se de brotos, folhas, frutos caídos e algumas flores. Apesar do tamanho reduzido, 
+        é muito ágil e utiliza a camuflagem para se esconder em vegetação densa. Vive sozinho ou em pares, 
+        apresentando hábitos solitários e geralmente crepusculares, podendo ser ativo durante o dia.
+    </p>
+
+    <p>
+        No Cerrado, aparece com frequência em áreas abertas, capoeiras, pastagens e bordas de mata. 
+        Também pode ser observado próximo a estradas rurais e propriedades agrícolas. Embora fuja quando 
+        ameaçado, pode reagir com chutes ou cabeçadas. O contato direto não é recomendado, já que pode 
+        transmitir zoonoses por mordidas ou arranhões.
+    </p>
+
+    <p>
+        A reprodução ocorre ao longo de todo o ano, intensificando-se no período chuvoso. 
+        A gestação dura entre 200 e 220 dias, resultando normalmente em um único filhote, 
+        que permanece escondido na vegetação por semanas antes de acompanhar a mãe.
+    </p>
+
+    <p>
+        O veado-catingueiro enfrenta ameaças como atropelamentos, caça ilegal, perda de habitat, queimadas 
+        e fragmentação. Em várias regiões do Cerrado, é considerado vulnerável devido à forte pressão humana.
+    </p>
+
+    <h2 class="section-title">Características Gerais</h2>
+
+    <ul>
+        <li><strong>Comprimento corporal:</strong> 90 a 110 cm</li>
+        <li><strong>Altura na cernelha:</strong> cerca de 50 cm</li>
+        <li><strong>Peso:</strong> 12 a 25 kg</li>
+        <li><strong>Cauda:</strong> curta, com parte inferior branca usada como sinal visual</li>
+        <li><strong>Chifres:</strong> presentes apenas nos machos, simples e pequenos</li>
+    </ul>
+
+    <a href="index.html" class="btn-voltar">← Voltar</a>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 Zoologando — Preservando o Cerrado
+</footer>
+
+</body>
+</html>

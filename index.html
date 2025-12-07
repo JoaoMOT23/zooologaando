@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOOLOGOANDO - Patos de Minas</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <img src="zoologando.png" alt="Logo Zoologoando" class="logo-img">
+                </div>
+            
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#especies">Espécies</a></li>
+                <li><a href="#papo-de-bicho">Papo de Bicho</a></li> 
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+            <a href="#especies" class="btn-nav">Explorar</a>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <img src="zoologando.png" alt="Logo Zoologoando" class="hero-logo">
+            <p class="description">
+                Um espaço selvagem para quem ama conhecer, proteger e falar de animais do nosso Cerrado e região.
+            </p>
+            <a href="#especies" class="btn-hero">Conheça nossa fauna</a>
+        </div>
+    </header>
+
+    <section id="especies" class="section-light">
+        <div class="container">
+            <h2 class="section-title-dark">ESPÉCIES DO CERRADO & MINAS</h2>
+            
+            <div class="filters">
+                <button class="filter-btn active" data-filter="todos">Todas</button>
+                <button class="filter-btn" data-filter="aves">Aves</button>
+                <button class="filter-btn" data-filter="mamiferos">Mamíferos</button>
+                <button class="filter-btn" data-filter="repteis">Répteis</button>
+                </div>
+
+            
+                </div>
+
+            </div>
+        </div>
+            <div class="cards-grid">
+
+    <!-- ==================== AVES ==================== -->
+
+    <!-- Urutau -->
+    <div class="species-card" data-category="aves">
+        <div class="card-top">
+            <img src="Urutau.JPG" alt="Urutau">
+        </div>
+        <div class="card-body">
+            <h3>Urutau</h3>
+            <p class="scientific-name">Nyctibius griseus</p>
+            <span class="badge">Mestre da camuflagem</span>
+            <a href="urutau.html" class="btn-card">Saiba mais</a>
+        </div>
+    </div>
+
+    <!-- Seriema -->
+    <div class="species-card" data-category="aves">
+        <div class="card-top">
+            <img src="Seriema.JPG" alt="Seriema">
+        </div>
+        <div class="card-body">
+            <h3>Seriema</h3>
+            <p class="scientific-name">Cariama cristata</p>
+            <span class="badge">Canto símbolo do Cerrado</span>
+            <a href="seriema.html" class="btn-card">Saiba mais</a>
+        </div>
+    </div>
+
+    <!-- Coruja-buraqueira -->
+    <div class="species-card" data-category="aves">
+        <div class="card-top">
+            <img src="Coruja buraqueira.JPG" alt="Coruja-buraqueira">
+        </div>
+        <div class="card-body">
+            <h3>Coruja-buraqueira</h3>
+            <p class="scientific-name">Athene cunicularia</p>
+            <span class="badge">Faz ninho no solo</span>
+            <a href="coruja-buraqueira.html" class="btn-card">Saiba mais</a>
+        </div>
+    </div>
+
+    <!-- Arara-canindé -->
+    <div class="species-card" data-category="aves">
+        <div class="card-top">
+            <img src="Arara canindé.JPG" alt="Arara-canindé">
+        </div>
+        <div class="card-body">
+            <h3>Arara-canindé</h3>
+            <p class="scientific-name">Ara ararauna</p>
+            <span class="badge">Símbolo do Cerrado</span>
+            <a href="arara-caninde.html" class="btn-card">Saiba mais</a>
+        </div>
+    </div>
+
+    <!-- Papagaio-verdadeiro -->
+    <div class="species-card" data-category="aves">
+        <div class="card-top">
+            <img src="Papagaio.JPG" alt="Papagaio-verdadeiro">
+        </div>
+        <div class="card-body">
+            <h3>Papagaio-verdadeiro</h3>
+            <p class="scientific-name">Amazona aestiva</p>
+            <span class="badge">Imita a voz humana</span>
+            <a href="papagaio.html" class="btn-card">Saiba mais</a>
+        </div>
+    </div>
+
+
+    <!-- ==================== MAMÍFEROS ==================== -->
+
+    <!-- Macaco-prego -->
+    <div class="species-card" data-category="mamiferos">
+        <div class="card-top">
+            <img src="Macaco prego.JPG" alt="Macaco-prego">
+        </div>
+        <div class="card-body">
+            <h3>Macaco-prego</h3>
+            <p class="scientific-name">Sapajus apella</p>
+            <span class="badge">Extremamente inteligente</span>
+            <a href="macacoprego.html" class="btn-card">Saiba mais</a>
+        </div>
+    </div>
+
+    <!-- Mico-estrela -->
+    <div class="species-card" data-category="mamiferos">
+        <div class="card-top">
+            <img src="Mico2.JPG" alt="Mico-estrela">
+        </div>
+        <div class="card-body">
+            <h3>Mico-estrela</h3>
+            <p class="scientific-name">Callithrix penicillata</p>
+            <span class="badge">Tufos pretos nas orelhas</span>
+            <a href="mico-estrela.html" class="btn-card">Saiba mais</a>
+        </div>
+    </div>
+
+    <!-- Veado-catingueiro -->
+    <div class="species-card" data-category="mamiferos">
+        <div class="card-top">
+            <img src="Veado catingueiro.JPG" alt="Veado-catingueiro">
+        </div>
+        <div class="card-body">
+            <h3>Veado-catingueiro</h3>
+            <p class="scientific-name">Mazama gouazoubira</p>
+            <span class="badge">Ágil e discreto</span>
+            <a href="veado-catingueiro.html" class="btn-card">Saiba mais</a>
+        </div>
+    </div>
+
+    <!-- Veado-campeiro -->
+    <div class="species-card" data-category="mamiferos">
+        <div class="card-top">
+            <img src="Veado campeiro.JPG" alt="Veado-campeiro">
+        </div>
+        <div class="card-body">
+            <h3>Veado-campeiro</h3>
+            <p class="scientific-name">Ozotoceros bezoarticus</p>
+            <span class="badge">Habita campos abertos</span>
+            <a href="veado-campeiro.html" class="btn-card">Saiba mais</a>
+        </div>
+    </div>
+
+    <!-- Anta -->
+    <div class="species-card" data-category="mamiferos">
+        <div class="card-top">
+            <img src="Anta.JPG" alt="Anta">
+        </div>
+        <div class="card-body">
+            <h3>Anta</h3>
+            <p class="scientific-name">Tapirus terrestris</p>
+            <span class="badge">Maior mamífero terrestre do Brasil</span>
+            <a href="anta.html" class="btn-card">Saiba mais</a>
+        </div>
+    </div>
+
+    <!-- Tamanduá-bandeira -->
+    <div class="species-card" data-category="mamiferos">
+        <div class="card-top">
+            <img src="Tamanduá bandeira.JPG" alt="Tamanduá-bandeira">
+        </div>
+        <div class="card-body">
+            <h3>Tamanduá-bandeira</h3>
+            <p class="scientific-name">Myrmecophaga tridactyla</p>
+            <span class="badge">Língua de 60 cm</span>
+            <a href="tamanduab.html" class="btn-card">Saiba mais</a>
+        </div>
+    </div>
+
+    <!-- Lobo-guará -->
+    <div class="species-card" data-category="mamiferos">
+        <div class="card-top">
+            <img src="Lobo guará.JPG" alt="Lobo-guará">
+        </div>
+        <div class="card-body">
+            <h3>Lobo-guará</h3>
+            <p class="scientific-name">Chrysocyon brachyurus</p>
+            <span class="badge">Semeador da lobeira</span>
+            <a href="guara.html" class="btn-card">Saiba mais</a>
+        </div>
+    </div>
+
+    <!-- Saruê -->
+    <div class="species-card" data-category="mamiferos">
+        <div class="card-top">
+            <img src="Gambá de orelha preta.JPG" alt="Saruê">
+        </div>
+        <div class="card-body">
+            <h3>Saruê (Gambá-de-orelha-preta)</h3>
+            <p class="scientific-name">Didelphis albiventris</p>
+            <span class="badge">Resistente a venenos</span>
+            <a href="sarue.html" class="btn-card">Saiba mais</a>
+        </div>
+    </div>
+
+
+    <!-- ==================== RÉPTEIS & QUELÔNIOS ==================== -->
+
+    <!-- Jabuti -->
+    <div class="species-card" data-category="repteis">
+        <div class="card-top">
+            <img src="Jabuti.JPG" alt="Jabuti">
+        </div>
+        <div class="card-body">
+            <h3>Jabuti</h3>
+            <p class="scientific-name">Chelonoidis carbonarius</p>
+            <span class="badge">Vive até 80 anos</span>
+            <a href="jabuti.html" class="btn-card">Saiba mais</a>
+        </div>
+    </div>
+
+    <!-- Cágado -->
+    <div class="species-card" data-category="repteis">
+        <div class="card-top">
+            <img src="Cágado.JPG" alt="Cágado">
+        </div>
+        <div class="card-body">
+            <h3>Cágado</h3>
+            <p class="scientific-name">Phrynops geoffroanus</p>
+            <span class="badge">Vive em rios e córregos</span>
+            <a href="cagado.html" class="btn-card">Saiba mais</a>
+        </div>
+    </div>
+
+    <!-- Cascavel -->
+    <div class="species-card" data-category="repteis">
+        <div class="card-top">
+            <img src="Cascavel.JPG" alt="Cascavel">
+        </div>
+        <div class="card-body">
+            <h3>Cascavel</h3>
+            <p class="scientific-name">Crotalus durissus</p>
+            <span class="badge">Chocalho na cauda</span>
+            <a href="cascavel.html" class="btn-card">Saiba mais</a>
+        </div>
+    </div>
+
+    <!-- Jiboia -->
+    <div class="species-card" data-category="repteis">
+        <div class="card-top">
+            <img src="Jiboia.JPG" alt="Jiboia">
+        </div>
+        <div class="card-body">
+            <h3>Jiboia</h3>
+            <p class="scientific-name">Boa constrictor</p>
+            <span class="badge">Não venenosa</span>
+            <a href="jiboia.html" class="btn-card">Saiba mais</a>
+        </div>
+    </div>
+
+    <!-- Teiú -->
+    <div class="species-card" data-category="repteis">
+        <div class="card-top">
+            <img src="Teiú.JPG" alt="Teiú">
+        </div>
+        <div class="card-body">
+            <h3>Teiú</h3>
+            <p class="scientific-name">Salvator merianae</p>
+            <span class="badge">Caçador oportunista</span>
+            <a href="teiu.html " class="btn-card">Saiba mais</a>
+        </div>
+    </div>
+
+</div>
+
+
+    <section id="papo-de-bicho" class="section-light" style="background-color: #f4fcf4;">
+        <div class="container">
+            <h2 class="section-title-dark">PAPO DE BICHO</h2>
+            
+            <div class="guidance-intro">
+                <p>
+                    Informação é o primeiro passo para a conservação. Navegue pelos temas abaixo para saber mais sobre o que fazer e como agir em relação à fauna local:
+                </p>
+            </div>
+
+            <h3 class="guidance-subtitle">Temas e Orientações</h3>
+
+            <div class="contacts-grid">
+                
+                <div class="contact-box alert-box">
+                    <h4><i class="fa-solid fa-triangle-exclamation"></i> Encontrou Algum Bicho?</h4>
+                    <p class="contact-desc">
+                        Em caso de emergência ou resgate em Patos de Minas, contate:
+                    </p>
+                    <ul>
+                        <li><i class="fa-solid fa-phone-volume"></i> **Corpo de Bombeiros (193)**</li>
+                        <li><i class="fa-solid fa-location-dot"></i> CETRAS (IEF) - (34) 3821-7837</li>
+                        <li class="highlight-phone"><i class="fa-solid fa-phone"></i> **Denúncias Ambientais: 155 (LigMinas)**</li>
+                    </ul>
+                    <a href="#contato" class="btn-card-small">Ver Contatos Completos</a>
+                </div>
+
+                <div class="contact-box">
+                    <h4><i class="fa-solid fa-leaf"></i> Como Preservar Nossa Fauna Local?</h4>
+                    <p class="contact-desc">
+                        Pequenas ações diárias que fazem uma grande diferença para o ecossistema do Cerrado:
+                    </p>
+                    <ul>
+                        <li><i class="fa-solid fa-lightbulb"></i> Reduza a velocidade em estradas rurais.</li>
+                        <li><i class="fa-solid fa-trash-can"></i> Não descarte lixo em áreas verdes.</li>
+                        <li><i class="fa-solid fa-seedling"></i> Apoie projetos de reflorestamento.</li>
+                        <li><i class="fa-solid fa-house-chimney-medical"></i> Nunca alimente animais silvestres.</li>
+                    </ul>
+                </div>
+
+                <div class="contact-box highlight-box">
+                    <h4><i class="fa-solid fa-book"></i> Se Interessou? Veja Mais!</h4>
+                    <p class="contact-desc">
+                        Aprofunde seu conhecimento com materiais de referência:
+                    </p>
+                    <ul class="resource-list">
+                        <li><i class="fa-solid fa-book-open"></i> Livro: **"Fauna do Cerrado"** (Autor: Vários)</li>
+                        <li><i class="fa-solid fa-globe"></i> Artigo Científico: **"Impactos Urbanos na Biodiversidade"** (Publicação: Rev. Ecol.)</li>
+                        <li><i class="fa-solid fa-link"></i> Portal de Notícias: **Link sobre Conservação em MG**</li>
+                        <li><i class="fa-solid fa-book-open"></i> E-book: **"Guia de Identificação de Répteis"** (Autor: Biologia local)</li>
+                    </ul>
+                    <p class="legal-note">
+                        *Nota: Títulos e links são apenas sugestões de temas. Pesquise por materiais de autores e instituições renomadas.* 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="conteudo" class="section-light">
+        <div class="container">
+            <h2 class="section-title-dark">MAIS CONTEÚDO</h2>
+            <div class="cards-grid">
+                <div class="blog-card">
+                    <div class="blog-top gradient-1"><span class="blog-emoji">💡</span></div>
+                    <div class="blog-body">
+                        <span class="tag">Curiosidades</span>
+                        <h3>Gaviões nas cidades?</h3>
+                        <p>Descubra como essas aves ajudam no equilíbrio urbano.</p>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-top gradient-2"><span class="blog-emoji">🛡️</span></div>
+                    <div class="blog-body">
+                        <span class="tag">Segurança</span>
+                        <h3>Encontrei uma cobra!</h3>
+                        <p>Dicas essenciais para sua segurança e a do animal.</p>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-top gradient-3"><span class="blog-emoji">🌱</span></div>
+                    <div class="blog-body">
+                        <span class="tag">Conservação</span>
+                        <h3>O papel dos dispersores</h3>
+                        <p>Como o teiú ajuda a plantar árvores na mata.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="section-light">
+        <div class="container about-container">
+            <h2 class="section-title-dark">SOBRE O PROJETO</h2>
+            
+            <p class="about-text">
+                Somos alunas de Ciências Biológicas dedicadas à conservação do Cerrado. Nosso objetivo é conscientizar a comunidade de Patos de Minas sobre a proteção da nossa biodiversidade.
+            </p>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-circle"><img src="amélia.png" alt="Amélia"></div>
+                    <h3>Amélia</h3>
+                </div>
+                <div class="team-member">
+                    <div class="member-circle"><img src="duda.png" alt="Duda"></div>
+                    <h3>Duda</h3>
+                </div>
+                <div class="team-member">
+                    <div class="member-circle"><img src="nicole.png" alt="Nicole"></div>
+                    <h3>Nicole</h3>
+                </div>
+                <div class="team-member">
+                    <div class="member-circle"><img src="nycolle.png" alt="Nycolle"></div>
+                    <h3>Nycolle</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- Nova seção solicitada -->
+    <!-- abaixo das fotos das participantes e acima da seção "MAIS CONTEÚDO" -->
+    <!-- usuário clica no botão com emoji de foto e é redirecionado para fotoemail.html -->
+    <!-- ========================= -->
+    <section id="enviar-foto" class="section-light">
+        <div class="container">
+            <h2 class="section-title-dark">ENVIE UMA FOTO DE UM ANIMAL</h2>
+
+            <div class="contact-box">
+                <h4><i class="fa-solid fa-camera"></i> Enviar Foto</h4>
+                <p class="contact-desc">
+                    Encontrou um animal e quer que nossa equipe veja a foto? Clique no botão abaixo (ícone de foto) — você será redirecionado para a página onde poderá enviar um e-mail com a imagem anexada.
+                </p>
+
+                <!-- Botão com emoji de foto — redireciona para a página de envio de e-mail -->
+                <a href="fotoemail.html" class="btn-submit" aria-label="Enviar foto por e-mail">
+                    📷 Enviar Foto
+                </a>
+
+                <p class="legal-note">
+                    *Observação: este botão apenas redireciona você para a página de envio. A foto não é enviada automaticamente por este site — você deverá anexá-la manualmente no e-mail que abrirá.*
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- ========================= -->
+
+    <section id="contato" class="section-light">
+        <div class="container contact-container">
+            <h2 class="section-title-dark">FALE COM A GENTE!</h2>
+            
+            <div class="social-icons">
+                <div class="icon-circle"><i class="fa-brands fa-instagram"></i></div>
+                <div class="icon-circle"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="icon-circle"><i class="fa-regular fa-envelope"></i></div>
+            </div>
+
+            <form class="contact-form">
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="E-mail" required>
+                <textarea placeholder="Mensagem" rows="4" required></textarea>
+                <button type="submit" class="btn-submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ZOOLOGOANDO - Patos de Minas. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const speciesCards = document.querySelectorAll('.species-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                const filterValue = button.getAttribute('data-filter');
+
+                speciesCards.forEach(card => {
+                    const cardCategory = card.getAttribute('data-category');
+                    if (filterValue === 'todos' || filterValue === cardCategory) {
+                        card.style.display = 'block';
+                        card.style.opacity = '0';
+                        setTimeout(() => card.style.opacity = '1', 50);
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.navbar');
+            if(window.scrollY > 50) nav.classList.add('scrolled');
+            else nav.classList.remove('scrolled');
+        });
+    </script>
+
+</body>
+</html>

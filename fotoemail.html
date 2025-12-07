@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Foto - Zoologando</title>
+    <link rel="stylesheet" href="style.css"> <!-- seu CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Russo+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR (igual ao site principal) -->
+<nav class="navbar">
+    <div class="navbar-container">
+        <a href="index.html">
+            <img src="zoologando.png" alt="Logo" class="logo-img">
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Animais</a></li>
+            <li><a href="index.html#">Papo de Bicho</a></li>
+            <li><a href="index.html">Conteúdo</a></li>
+            <li><a href="index.html">Sobre</a></li>
+        </ul>
+
+        <a href="index.html#contato" class="btn-nav">Contato</a>
+    </div>
+</nav>
+
+<!-- ESPAÇO PARA COMPENSAR NAVBAR FIXA -->
+<div style="height: 90px;"></div>
+
+<!-- SEÇÃO PRINCIPAL -->
+<section class="section-light">
+    <div class="container">
+        <h2 class="section-title-dark">Envie uma Foto para o Zoologando</h2>
+
+        <div class="contact-container" 
+             style="background:white; padding:2.5rem; border-radius:20px; 
+             box-shadow:0 10px 25px rgba(5,46,22,0.1); border-left:6px solid var(--color-lime);">
+
+            <p style="color:var(--color-forest); font-size:1.1rem; margin-bottom:1.5rem;">
+                Você pode anexar uma foto do animal e enviar diretamente para nossa equipe.
+                Clique no botão abaixo para abrir o e-mail com o endereço já preenchido.
+            </p>
+
+            <!-- CAMPO DE UPLOAD (apenas opcional/visual) -->
+            <label style="font-weight:bold; color:var(--color-dark-forest); display:block; margin-bottom:0.5rem;">
+                Envie no email zooologandopapodebicho@gmail.com
+            </label>
+
+
+            <!-- BOTÃO QUE ABRE O EMAIL -->
+            <a href="https://accounts.google.com/v3/signin/identifier?dsh=S-2113247065%3A1764108923532225&hl=pt-BR&ifkv=ARESoU3dtAUMSCXMOZIWJxCw_9Iix2PhGK2qzW3usURyntevAZlqVEXr4_OV_W6wYXr_5S6PDJkxHQ&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+               class="btn-submit"
+               style="display:block; text-align:center;">
+                Enviar por E-mail
+            </a>
+
+            <p style="margin-top:1rem; font-size:0.85rem; color:var(--color-subtle-text);">
+                *A foto selecionada não é enviada automaticamente — você a anexará no e-mail que será aberto.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER (igual ao site principal) -->
+<footer>
+    Zoologando © 2025 — Todos os direitos reservados.
+</footer>
+
+</body>
+</html>

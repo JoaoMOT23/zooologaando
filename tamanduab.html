@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tamanduá-bandeira</title>
+
+<!-- FONTES -->  
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Russo+One&display=swap" rel="stylesheet">
+
+<style>
+
+/* ================== RESET ================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-dark-forest: #052e16;
+    --color-forest: #1b5e20;
+    --color-lime: #7cb342;
+    --color-light-green: #dcedc8;
+    --color-lighter-green: #f1f8e9;
+    --color-subtle-text: #558b2f;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-light-green);
+    color: var(--color-dark-forest);
+    line-height: 1.7;
+    padding-top: 90px;
+}
+
+/* ================== NAVBAR ================== */
+.navbar {
+    width: 100%;
+    padding: 1rem 3rem;
+    background: rgba(5, 46, 22, 0.95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(4px);
+}
+
+.navbar-container {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    height: 45px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--color-light-green);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: var(--color-lime);
+}
+
+/* ================== CONTEÚDO ================== */
+.page-container {
+    max-width: 1000px;
+    margin: auto;
+    background: var(--color-lighter-green);
+    padding: 3rem;
+    border-radius: 22px;
+    box-shadow: 0 10px 30px rgba(5,46,22,0.12);
+    border-left: 6px solid var(--color-lime);
+}
+
+.animal-logo {
+    width: 260px;
+    margin: 0 auto 1.8rem;
+    display: block;
+    border-radius: 20px;
+    object-fit: cover;
+    filter: drop-shadow(0 3px 8px rgba(0,0,0,0.25));
+}
+
+/* TÍTULOS */
+.page-title {
+    text-align: center;
+    font-family: 'Russo One';
+    font-size: 2.7rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-dark-forest);
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--color-subtle-text);
+    margin-bottom: 2.5rem;
+}
+
+.section-title {
+    font-family: 'Russo One';
+    font-size: 1.9rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-forest);
+    border-left: 6px solid var(--color-lime);
+    padding-left: 10px;
+}
+
+/* TEXTO */
+.page-container p {
+    margin-bottom: 1.4rem;
+    font-size: 1.05rem;
+    text-align: justify;
+    color: #2f3d29;
+}
+
+/* LISTA */
+.page-container ul {
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+}
+
+.page-container ul li {
+    margin-bottom: 0.6rem;
+    font-size: 1.05rem;
+    color: #2e4820;
+}
+
+/* BOTÃO VOLTAR */
+.btn-voltar {
+    display: inline-block;
+    margin-top: 2.5rem;
+    padding: 0.9rem 2.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #2d1f0b;
+    border-radius: 28px;
+
+    background: #caa43a;
+    border: 2px solid #5c3e12;
+    box-shadow: 0 6px 18px rgba(70,50,10,0.25);
+    transition: 0.3s;
+}
+
+.btn-voltar:hover {
+    transform: translateY(-3px);
+}
+
+/* FOOTER */
+footer {
+    margin-top: 3rem;
+    background: var(--color-dark-forest);
+    color: #a5d6a7;
+    text-align: center;
+    padding: 2rem;
+    border-top: 5px solid var(--color-lime);
+}
+
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .page-container { padding: 1.7rem; }
+    .animal-logo { width: 170px; }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="navbar-container">
+        <img src="zoologando.png" class="logo-img" alt="Logo">
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="index.html">Animais</a></li>
+            <li><a href="index.html">Conteúdo</a></li>
+            <li><a href="index.html">Contato</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- CONTEÚDO -->
+<div class="page-container">
+
+    <img src="Tamanduá bandeira.JPG" alt="Tamanduá-bandeira" class="animal-logo">
+
+    <h1 class="page-title">Tamanduá-bandeira</h1>
+    <div class="subtitle"><em>Myrmecophaga tridactyla</em></div>
+
+    <p>
+        O tamanduá-bandeira é um dos mamíferos mais icônicos do Cerrado e o maior
+        representante do grupo dos xenartros. Reconhecido pelo focinho longo, língua extensa
+        e cauda peluda que lembra uma bandeira, ele pertence ao gênero 
+        <strong>Myrmecophaga</strong>, da família Myrmecophagidae.
+    </p>
+
+    <p>
+        Especializado em consumir formigas e cupins, pode ingerir milhares de insetos por dia.
+        Sua língua fina e pegajosa alcança cerca de 60 cm. Sem dentes, utiliza suas garras
+        poderosas para abrir formigueiros e cupinzeiros. É um animal solitário, geralmente
+        diurno, podendo ser crepuscular em regiões muito quentes.
+    </p>
+
+    <p>
+        No Cerrado, habita campos, veredas, matas de galeria e áreas abertas. Embora pareça
+        dócil, pode se defender com golpes extremamente fortes das garras dianteiras, sendo
+        arriscada qualquer tentativa de aproximação humana.
+    </p>
+
+    <p>
+        Em Patos de Minas, é visto com frequência em áreas rurais e próximas a rodovias,
+        onde enfrenta grande risco de atropelamentos e ataques por cães. Caso seja
+        encontrado ferido, deve-se acionar imediatamente a Polícia Ambiental.
+    </p>
+
+    <p>
+        A reprodução ocorre durante todo o ano. A gestação dura aproximadamente 180 dias,
+        resultando no nascimento de um filhote, que permanece nas costas da mãe por vários
+        meses, camuflado pela pelagem.
+    </p>
+
+    <p>
+        O tamanduá-bandeira é classificado como <strong>Vulnerável</strong>, e em algumas regiões pode
+        estar próximo da categoria <strong>Em Perigo</strong>. Suas principais ameaças são: atropelamentos,
+        queimadas, perda de habitat, ataques de cães, fragmentação do Cerrado e conflitos em
+        áreas rurais.
+    </p>
+
+    <h2 class="section-title">Características Gerais</h2>
+
+    <ul>
+        <li><strong>Comprimento corporal:</strong> 1,80 a 2,20 m (incluindo a cauda)</li>
+        <li><strong>Altura:</strong> 60 a 90 cm</li>
+        <li><strong>Peso:</strong> 25 a 45 kg</li>
+        <li><strong>Língua:</strong> até 60 cm, extremamente fina e pegajosa</li>
+        <li><strong>Garras:</strong> longas e curvas, usadas para defesa e alimentação</li>
+    </ul>
+
+    <a href="index.html" class="btn-voltar">← Voltar</a>
+
+</div>
+
+<footer>
+    © 2025 Zoologando — Preservando o Cerrado
+</footer>
+
+</body>
+</html>

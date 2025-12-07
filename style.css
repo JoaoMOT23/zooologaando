@@ -1,0 +1,840 @@
+/* --- RESET E GERAL --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PALETA DE CORES (Verde Floresta/Lima) */
+:root {
+    --color-dark-forest: #052e16;/* Verde bem escuro (Texto principal, Rodapé) */
+    --color-forest: #1b5e20; /* Verde Floresta (Fundos escuros) */
+    --color-lime: #7cb342; /* Verde Lima (Destaque, Botões) */
+    --color-light-green: #dcedc8;  /* Fundo principal (Off-White Esverdeado) */
+    --color-lighter-green: #f1f8e9; /* Fundo de cards/seção leve */
+    --color-subtle-text: #558b2f;  /* Cor de texto secundária */
+    --color-alert-red: #d32f2f; /* Cor para Alerta/Denúncia */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-light-green);
+    color: var(--color-dark-forest);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    padding: 1rem 3rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(5, 46, 22, 0.95);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    transition: background-color 0.3s;
+}
+
+/* Efeito de Scroll (se necessário)
+.navbar.scrolled {
+    background-color: var(--color-dark-forest);
+} */
+
+.navbar-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    height: 45px;
+    width: auto;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--color-light-green);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--color-lime);
+}
+
+.btn-nav {
+    background-color: var(--color-lime);
+    color: var(--color-dark-forest);
+    text-decoration: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 30px;
+    font-weight: 700;
+    box-shadow: 0 0 15px rgba(124, 179, 66, 0.4);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.btn-nav:hover {
+    transform: scale(1.05);
+    background-color: #8bc34a;
+}
+
+/* --- HERO SECTION (INÍCIO) --- */
+.hero {
+    height: 100vh;
+    /* Verde Musgo Profundo */
+    background: linear-gradient(135deg, var(--color-dark-forest) 0%, var(--color-forest) 50%, #2e7d32 100%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding-top: 5rem; /* Espaçamento para Navbar */
+}
+
+/* Estilo da Logo Maior na Home */
+.hero-logo {
+    width: 250px; height: auto;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4));
+}
+
+.main-title {
+    font-family: 'Russo One', sans-serif;
+    font-size: 4.5rem;
+    color: var(--color-lime);
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.subtitle {
+    font-family: 'Russo One', sans-serif;
+    font-size: 2.5rem;
+    color: var(--color-light-green);
+    margin-bottom: 1.5rem;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #a5d6a7;
+}
+
+.btn-hero {
+    background-color: #2e7d32;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: 2px solid var(--color-lime);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.btn-hero:hover {
+    background-color: var(--color-forest);
+    transform: translateY(-3px);
+    border-color: #8bc34a;
+}
+
+/* --- SEÇÕES GERAIS --- */
+.section-light {
+    padding: 5rem 0;
+    background-color: var(--color-light-green);
+}
+
+.section-title-dark {
+    font-family: 'Russo One', sans-serif;
+    color: var(--color-dark-forest);
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.guidance-subtitle {
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    color: var(--color-dark-forest);
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    border-bottom: 3px solid var(--color-lime);
+    display: inline-block;
+    padding-bottom: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* --- FILTROS (ESPÉCIES) --- */
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.6rem 1.5rem;
+    border: 2px solid var(--color-subtle-text);
+    border-radius: 25px;
+    background: transparent;
+    color: var(--color-forest);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    border-color: var(--color-forest);
+    background-color: var(--color-forest);
+    color: var(--color-light-green);
+}
+
+/* --- GRIDS DE CARDS --- */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.species-card {
+    background: var(--color-lighter-green);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(5, 46, 22, 0.15);
+    transition: transform 0.3s;
+}
+
+.species-card:hover {
+    transform: translateY(-10px);
+}
+
+/* ESTILO DO TOPO DO CARD PARA IMAGENS */
+.card-top {
+    /* MODIFICAÇÃO: Aumentado de 200px para 250px para melhor enquadramento */
+    height: 250px; padding: 0;
+    background-color: #ddd;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 4px solid var(--color-forest);
+}
+
+.card-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    object-position: center; /* Posição padrão, pode ser alterada para 'top' se as cabeças dos animais estiverem sendo cortadas */
+    transition: transform 0.5s ease;
+}
+
+.species-card:hover .card-top img {
+    transform: scale(1.1);
+}
+
+.card-body {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.card-body h3 {
+    font-size: 1.5rem;
+    color: var(--color-dark-forest);
+    margin-bottom: 0.2rem;
+}
+
+.scientific-name {
+    font-style: italic;
+    color: var(--color-subtle-text);
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.badge {
+    display: inline-block;
+    background-color: var(--color-lime);
+    color: var(--color-dark-forest);
+    padding: 0.4rem 1rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.btn-card {
+    display: block;
+    width: 100%;
+    background-color: var(--color-forest);
+    color: var(--color-light-green);
+    border: none;
+    padding: 0.8rem;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-card:hover {
+    background-color: #2e7d32;
+}
+
+/* --- SEÇÃO: PAPO DE BICHO (Antiga ORIENTAÇÕES) --- */
+.guidance-intro {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    text-align: center;
+    color: var(--color-forest);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding: 1rem 0;
+}
+
+.contacts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.contact-box {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(5, 46, 22, 0.08);
+    border-left: 6px solid var(--color-lime); 
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(5, 46, 22, 0.15);
+}
+
+.contact-box h4 {
+    color: var(--color-dark-forest);
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Russo One', sans-serif;
+}
+
+.contact-box h4 i {
+    color: var(--color-lime);
+    font-size: 1.2rem;
+}
+
+.contact-desc {
+    font-size: 0.9rem;
+    color: var(--color-subtle-text);
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #f1f8e9;
+    padding-bottom: 10px;
+}
+
+.contact-box ul {
+    list-style: none;
+    flex-grow: 1; /* Faz a lista crescer para preencher o espaço */
+}
+
+.contact-box ul li {
+    margin-bottom: 0.8rem;
+    color: #33691e;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.contact-box ul li i {
+    color: var(--color-forest);
+    margin-top: 3px;
+    min-width: 20px;
+}
+
+/* Card de Alerta (Encontrou algum bicho?) */
+.alert-box {
+    background-color: #fffafa;
+    border-left-color: var(--color-alert-red); 
+}
+
+.alert-box h4, .alert-box h4 i {
+    color: var(--color-alert-red);
+}
+
+.alert-box ul li i {
+    color: var(--color-alert-red);
+}
+
+.highlight-phone {
+    font-weight: bold;
+    color: var(--color-alert-red) !important;
+}
+
+/* Card Destaque (Veja Mais) */
+.highlight-box {
+    border-left-color: var(--color-dark-forest);
+}
+.highlight-box h4 i {
+    color: var(--color-dark-forest);
+}
+
+.legal-note {
+    font-size: 0.75rem;
+    color: #888;
+    margin-top: 1rem;
+    border-top: 1px dashed #eee;
+    padding-top: 10px;
+}
+
+.btn-card-small {
+    display: block;
+    width: 100%;
+    background-color: var(--color-alert-red);
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+    transition: background 0.3s;
+}
+
+.btn-card-small:hover {
+    background-color: #c62828;
+}
+
+/* --- SEÇÃO: CONTEÚDO (BLOG) --- */
+/* Reutilizando cards-grid e criando um novo estilo para o blog-card */
+#conteudo .cards-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.blog-card {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.blog-top {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-emoji {
+    font-size: 3rem;
+}
+
+.gradient-1 { background: linear-gradient(135deg, #a5d6a7, #e8f5e9); }
+.gradient-2 { background: linear-gradient(135deg, #ffd180, #fff3e0); }
+.gradient-3 { background: linear-gradient(135deg, #81c784, #f4fcf4); }
+
+
+.blog-body {
+    padding: 1.5rem;
+}
+
+.tag {
+    display: inline-block;
+    background-color: var(--color-subtle-text);
+    color: white;
+    padding: 0.2rem 0.8rem;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.blog-body h3 {
+    font-size: 1.3rem;
+    color: var(--color-dark-forest);
+    margin-bottom: 0.5rem;
+}
+
+/* --- SEÇÃO: SOBRE (Time) --- */
+.about-container {
+    text-align: center;
+}
+
+.about-text {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    font-size: 1.1rem;
+    color: var(--color-forest);
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.member-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border: 5px solid var(--color-lime);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.member-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    color: var(--color-dark-forest);
+    font-size: 1.2rem;
+}
+
+/* --- CONTATO E FOOTER --- */
+.contact-container {
+    text-align: center;
+    max-width: 600px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-forest);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.icon-circle:hover {
+    background-color: var(--color-lime);
+    transform: scale(1.1);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #a5d6a7;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.7);
+    font-size: 1rem;
+    color: var(--color-dark-forest);
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: var(--color-lime);
+    background: white;
+}
+
+.btn-submit {
+    background-color: var(--color-dark-forest);
+    color: var(--color-light-green);
+    border: none;
+    padding: 1rem;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: var(--color-forest);
+}
+
+footer {
+    background-color: var(--color-dark-forest);
+    color: #a5d6a7;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    border-top: 5px solid var(--color-lime);
+}
+
+/* --- RESPONSIVO --- */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .navbar {
+        padding: 1rem 1.5rem;
+    }
+    .main-title {
+        font-size: 3rem;
+    }
+    .subtitle {
+        font-size: 1.8rem;
+    }
+    .hero {
+        padding: 100px 0;
+        height: auto;
+        min-height: 100vh;
+    }
+    .hero-logo {
+        width: 150px;
+    }
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+    .contacts-grid {
+        grid-template-columns: 1fr;
+    }
+    .team-grid {
+        gap: 2rem 1rem;
+    }
+
+    /* Ajusta a altura dos cards também no mobile */
+    .species-card .card-top {
+        height: 220px;
+    }
+}
+/* --- SEÇÃO: ENVIAR FOTO (NOVO BLOCO) --- */
+
+.upload-container {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 20px;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 25px rgba(5, 46, 22, 0.1);
+    border-left: 6px solid var(--color-lime);
+    text-align: center;
+}
+
+.upload-title {
+    font-family: 'Russo One', sans-serif;
+    color: var(--color-dark-forest);
+    font-size: 1.8rem;
+    margin-bottom: 0.7rem;
+}
+
+.upload-desc {
+    font-size: 1rem;
+    color: var(--color-subtle-text);
+    margin-bottom: 1.5rem;
+}
+
+.upload-btn {
+    background: var(--color-forest);
+    color: var(--color-light-green);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.upload-btn:hover {
+    background: var(--color-dark-forest);
+    transform: translateY(-3px);
+}
+
+.upload-btn i {
+    font-size: 1.5rem;
+}
+
+/* --- GRIDS DE CARDS --- */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+/* CARD */
+.species-card {
+    background: var(--color-lighter-green);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 18px rgba(5, 46, 22, 0.12);
+    transition: transform 0.25s ease;
+}
+
+.species-card:hover {
+    transform: translateY(-6px);
+}
+
+/* TOPO DO CARD – IMAGEM */
+.card-top {
+    height: 210px;  /* antes: 250px */
+    background-color: #ddd;
+    overflow: hidden;
+    border-bottom: 3px solid var(--color-forest);
+}
+
+.card-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.45s ease;
+}
+
+.species-card:hover .card-top img {
+    transform: scale(1.07);
+}
+
+/* CORPO DO CARD */
+.card-body {
+    padding: 1.1rem; /* antes: 1.5rem */
+    text-align: center;
+}
+
+.card-body h3 {
+    font-size: 1.25rem; /* antes: 1.5rem */
+    color: var(--color-dark-forest);
+    margin-bottom: 0.25rem;
+}
+
+.scientific-name {
+    font-style: italic;
+    color: var(--color-subtle-text);
+    margin-bottom: 0.7rem; /* antes: 1rem */
+    font-size: 0.85rem;
+}
+
+.badge {
+    display: inline-block;
+    background-color: var(--color-lime);
+    color: var(--color-dark-forest);
+    padding: 0.3rem 0.8rem; /* antes: 0.4rem 1rem */
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-bottom: 1rem; /* antes: 1.5rem */
+}
+
+/* BOTÃO DO CARD */
+.btn-card {
+    display: block;
+    width: 100%;
+    background-color: var(--color-forest);
+    color: var(--color-light-green);
+    padding: 0.6rem; /* antes: 0.8rem */
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.95rem; /* antes maior */
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+.btn-card:hover {
+    background-color: #2e7d32;
+}
+
+/* MOBILE: reduzir ainda mais */
+@media (max-width: 768px) {
+    .species-card .card-top {
+        height: 180px; /* antes 220px */
+    }
+
+    .card-body {
+        padding: 0.9rem;
+    }
+
+    .card-body h3 {
+        font-size: 1.15rem;
+    }
+}
+/* Ajuste ideal para imagens */
+.card-top {
+    height: 210px; /* altura final do card após reduzir 20px */
+    background-color: #ddd;
+    overflow: hidden;
+    border-bottom: 4px solid var(--color-forest);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Sempre centraliza o animal sem distorcer */
+.card-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;  /* deixa o animal bem no centro */
+    transition: transform 0.5s ease;
+}
+
+.species-card:hover .card-top img {
+    transform: scale(1.1); /* zoom sutil */
+}
+.cards-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+/* Estilo da Logo Maior na Home */
+.hero-logo {
+    width: 600px; 
+    height: auto;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4)); /* Efeito de sombra */
+}
